@@ -97,11 +97,11 @@ function get_time(delivery_check) {
 }
 
 // open a new tab if all inputs are valid
-// new tab includes a reciept of the order, listing items ordered, number of each item, all prices, and estimated time
+// new tab includes a receipt of the order, listing items ordered, number of each item, all prices, and estimated time
 // takes the user's name and whether or not the food is being delivered as a parameter
 function new_page(first_name, last_name, delivery_check){
     let w = window.open();
-    let title = first_name + " " + last_name + "'s Reciept:";
+    let title = first_name + " " + last_name + "'s Receipt:";
     w.document.write("<head><link rel='stylesheet' href='style.css'><title>Order Summary</title><\head>")
     w.document.write("<h1>" +title + "<\h1>")
 
